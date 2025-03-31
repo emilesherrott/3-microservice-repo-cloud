@@ -1,0 +1,21 @@
+article {
+    width: 30vw;
+}
+
+.purchase-piece {
+    display: flex;
+    justify-content: space-between;
+}
+
+.purchase-quantity {
+    background-color: #FFF;
+    margin-left: 0px;
+}
+
+.purchase-button {
+    padding: 2px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #EED9C5;
+    background-color: #FFEAD5;
+}

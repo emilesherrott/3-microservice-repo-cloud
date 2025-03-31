@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    font-family: "Montserrat", serif;
+}
+
+#sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 25vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #FEFEFE;
+}
+
+.form-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#submit-button {
+    padding: 20px;
+}

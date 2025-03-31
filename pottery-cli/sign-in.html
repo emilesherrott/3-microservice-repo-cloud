@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/sign-in.css" />
+    <script src="./scripts/signIn.js" defer></script>
+    <script src="./scripts/navRender.js" defer></script> 
+    <script src="./scripts/logout.js" defer></script> 
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-items">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./sign-up.html">Sign Up</a></li>
+        <li><a href="./sign-in.html">Sign In</a></li>
+      </ul>
+    </nav>
+    <main>
+
+      <h1>Sign In</h1>
+      <form id="role-type-form">
+        <label for="potter">Potter</label>
+        <input id="potter" type="radio" name="role" value="potter" />
+        <label for="owner">Customer</label>
+        <input id="owner" type="radio" name="role" value="customer" />
+      </form>
+      
+      <section id="sign-in-section"></section>
+      <section><p id="failed-signin"></p></section>
+    </main>
+  </body>
+</html>

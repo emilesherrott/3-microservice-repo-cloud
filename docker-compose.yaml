@@ -1,0 +1,31 @@
+version: '3.9'
+services:
+  pottery-api:
+    image: emilesherrott/pottery-api-cloud:0.0.1.RELEASE
+    ports:
+      - '3000:3000'
+    restart: always
+    depends_on:
+      - pottery-db
+      - pottery-python
+    networks:
+      - pottery-network
+
+  pottery-db:
+    image: emilesherrott/pottery-db-cloud:0.0.1.RELEASE
+    ports:
+      - '5432:5432'
+    restart: always
+    networks:
+      - pottery-network
+  
+  pottery-python:
+    image: emilesherrott/pottery-python-cloud:0.0.1.RELEASE
+    ports:
+      - '3001:3001'
+    restart: always
+    networks:
+      - pottery-network
+
+networks:
+  pottery-network: 
