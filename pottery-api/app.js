@@ -15,6 +15,14 @@ app.use('/ceramics', ceramicsRouter)
 app.use('/sales', salesRouter)
 app.use('/users', userRouter)
 
+app.get('/', (req, res) => {
+    res.status(200).json({
+        "success": true,
+        "message": "Welcome to the Ceramics API a place for potters and purchasers to create and shop.",
+        "author": "Emile Sherrott"
+    })
+})
+
 module.exports = {
     app
 }
